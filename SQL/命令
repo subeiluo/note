@@ -1,0 +1,34 @@
+CONNECT         user@database 命令CONNECT用于建立与数据库的连接，它可以申请连接，也可以修改连接。
+DISCONNECT      命令DISCONNECT用于断开用户与数据库的连接。
+EXIT            当使用EXIT命令离开数据库时，SQL会话就结束了，而且用于访问数据库的软件通常会关闭。
+
+数据定义语言（DDL）；
+        CREATE TABLE    创建表
+        ALTER TABLE     更改表
+        DROP TABLE      删除表
+        CREATE INDEX    创建主键
+        ALTER INDEX     更改主键
+        DROP INDEX      删除主键
+        CREATE VIEW     创建视图
+        DROP VIEW       删除视图
+        CREATE TYPE     创建自定义类型
+数据操作语言（DML）；
+        INSERT          增加
+        UPDATE          修改
+        DELETE          删除
+数据查询语言（DQL）；
+        SELECT          查询
+数据控制语言（DCL）；
+        ALTER PASSWORD  修改密码
+        GRANT           授权
+        REVOKE          撤销
+        CREATE SYNONYM  创建同义词
+数据管理命令；
+        START AUDIT     开始审计
+        STOP AUDIT      结束审计
+事务控制命令。
+        COMMIT          保存数据库事务
+        ROLLBACK        撤销数据库事务
+        SAVEPOINT       在一组事务里创建标记点以用于回退(ROLLBACK)
+        SET TRANSACTION 设置事务名称
+
