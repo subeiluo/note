@@ -1,0 +1,21 @@
+容器模型其实跟虚拟机模型相似，其主要的区别在于，容器的运行不会独占操作系统。
+实际上，运行在相同宿主机上的容器是共享一个操作系统的，这样就能够节省大量的系统资源，如CPU、RAM以及存储。
+
+对容器发展影响比较大的技术包括内核命名空间（Kernel Namespace）、控制组（Control Group）、联合文件系统（Union File System），当然更少不了Docker。
+可以在Mac系统上使用Docker for Mac来运行Linux容器。这是通过在Mac上启动一个轻量级Linux VM，然后在其中无缝地运行Linux容器来实现的。
+
+Linux
+SpringBoot
+
+安装,命令(镜像,容器,操作...),docker镜像,容器数据卷,DockerFile,Docker网络原理,IDEA整合Docker,
+集群管理
+Docker Compose,Docker Swarm, CI\CD Jenkins
+
+项目带着环境安装打包  (redis, MySQL, jdk, ES, Hadoop 配置麻烦,不支持跨平台)
+传统:开发发包,运维部署!
+现在:开发打包部署上线,一站式流程
+Docker对以上问题,提出了解决方案!
+
+docker的思想
+    来自于集装箱   隔离:docker核心思想,封箱相互隔离
+    Docker通过隔离机制,可以将服务器利用到极致!
