@@ -1,6 +1,6 @@
 https://www.bilibili.com/video/BV1UE41147KC?p=2
 
-非关系型数据库无法读取SQL语言
+#非关系型数据库无法读取SQL语言
 
 Error Server returns invalid timezone. Need to set 'serverTimezone' property.
 # 设置全局时区 mysql> set global time_zone = '+8:00';
