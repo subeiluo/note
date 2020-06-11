@@ -67,3 +67,12 @@
     自定义类型
         自定义类型是由用户定义的类型，它允许用户根据已有的数据类型来定制自己的数据类型，从而满足数据存储的需要。
         语句CREATE TYPE用于创建自定义类型。
+    域
+        域是能够被使用的有效数据类型的集合。域与数据相关联，从而只接受特定的数据。在域创建之后，我们可以向域添加约束。
+        约束与数据类型共同发挥作用，从而进一步限制字段能够接受的数据。域的使用类似于自定义类型。
+        创建域
+            CREATE DOMAIN MONEY_D AS NUMBER(8,2)
+        添加约束
+            ALTER DOMAIN MONEY_D ADD CONSTRAINT MONEY_CON1 CHECK (VALUE > 5);
+        引用域
+            CREATE TABLE EMP_PAY (EMP_ID NUMBER(9), EMP_NAME VARCHAR2(30),PAY_RATE MONEY_D);
